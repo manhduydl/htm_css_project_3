@@ -2,6 +2,11 @@
     box-sizing: border-box;
 }
 
+:root {
+    --primary-color: #2e80ce;
+    --secondary-color: #10375c;
+}
+
 html {
     font-size: 62.5%;
 }
@@ -9,4 +14,112 @@ html {
 body {
     font-size: 1.6rem;
     font-family: "Sora", sans-serif;
+}
+
+/* Common */
+.container {
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    color: #fff;
+    text-align: center;
+    font-size: 1.6rem;
+    font-style: normal;
+    line-height: 60px;
+    background: var(--primary-color);
+    border: 0px;
+    border-radius: 999px;
+    padding: 0 45px;
+}
+
+/* Header */
+.sticky-header {
+    position: sticky;
+    z-index: 1;
+    left: 0;
+    top: -18px;
+    padding: 30px 0 12px;
+    background: var(--secondary-color);
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: inline-flex;
+}
+
+.logo__icon {
+    width: 30px;
+    height: 30px;
+}
+
+.logo__text {
+    margin-left: 6px;
+}
+
+.logo__brand {
+    display: block;
+    color: #fff;
+    text-align: right;
+    font-size: 1.8rem;
+    font-style: normal;
+    line-height: 0.77;
+}
+
+.logo__brand--small {
+    margin-top: 3px;
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 1.16;
+}
+
+.navbar__list {
+    display: flex;
+    gap: 42px;
+}
+
+.login-cta,
+.navbar__link {
+    color: #c9d2da;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1.75;
+}
+
+.navbar__link--active {
+    -webkit-text-stroke: 0.7px #fff;
+}
+
+.navbar__link:hover {
+    -webkit-text-stroke: 0.7px #fff;
+}
+
+.navbar__link--active::before {
+    position: relative;
+    top: -2px;
+    left: -11px;
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    background: #fff;
+    border-radius: 50%;
+}
+
+.sign-up-btn {
+    margin-left: 28px;
+    padding: 0 20px;
+    line-height: 40px;
 }

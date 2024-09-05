@@ -40,6 +40,23 @@ a {
     padding: 0 45px;
 }
 
+.heading {
+    color: var(--secondary-color);
+    font-size: 5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -1px;
+}
+
+.desc {
+    color: #575f66;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1.67;
+}
+
 /* Header */
 .sticky-header {
     position: sticky;
@@ -201,24 +218,13 @@ a {
 }
 
 .service__heading {
-    color: var(--secondary-color);
     text-align: center;
-    font-size: 5rem;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 1.2;
-    letter-spacing: -1px;
 }
 
 .service__desc {
     margin: 18px auto 0px;
     width: 468px;
-    color: #575f66;
     text-align: center;
-    font-size: 1.8rem;
-    font-style: normal;
-    font-weight: 300;
-    line-height: 1.67;
 }
 
 .service__row {
@@ -271,7 +277,7 @@ a {
 }
 
 .service-item__heading {
-    color: #10375c;
+    color: var(--secondary-color);
     font-size: 1.8rem;
     font-style: normal;
     font-weight: 600;
@@ -289,4 +295,69 @@ a {
 
 .service__btn {
     margin-top: 55px;
+}
+
+/* Feature */
+.feature {
+    padding: 100px 0;
+    background: #f6fbff;
+}
+
+.feature__desc {
+    width: 468px;
+    margin: 18px 0;
+}
+
+.feature__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+    margin-top: 86px;
+}
+
+.feature-item {
+    --border-color: #eaf6ff;
+    padding: 42px;
+    border-radius: 4px;
+    border: 16px solid var(--border-color);
+    transition: 0.25s;
+}
+
+.feature-item:hover {
+    transform: translateY(-16px);
+    --border-color: var(--primary-color);
+}
+
+.feature-item__icon {
+    width: 72px;
+    height: 72px;
+}
+
+.feature-item__heading {
+    margin-top: 18px;
+    color: var(--secondary-color);
+    font-size: 2.6rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.39;
+}
+
+.feature-item__link,
+.feature-item__desc {
+    margin-top: 28px;
+    color: #575f66;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1.75;
+}
+
+.feature-item__link {
+    display: inline-block;
+    margin-top: 18px;
+}
+
+.feature-item:hover .feature-item__link {
+    color: var(--primary-color);
+    font-weight: 400;
 }

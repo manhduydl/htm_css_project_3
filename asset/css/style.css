@@ -486,3 +486,46 @@ a {
     background: var(--primary-color);
     border-color: var(--primary-color);
 }
+
+/* CTA */
+.cta {
+    margin: 180px 0 85px;
+}
+
+.cta-body {
+    display: flex;
+    gap: 0 160px;
+    padding: 75px 70px;
+    background: var(--primary-color);
+    border-radius: 4px;
+}
+
+.cta__images {
+    position: relative;
+    width: 284px;
+    flex-shrink: 0;
+}
+
+.cta__img {
+    position: absolute;
+    left: 0;
+    bottom: -75px;
+    width: 284px;
+    height: 522px;
+    object-fit: cover;
+}
+
+.cta__heading {
+    color: #fff;
+}
+
+.cta__desc {
+    margin-top: 18px;
+    color: #fff;
+}
+
+.cta__row {
+    display: flex;
+    gap: 0 28px;
+    margin-top: 38px;
+}

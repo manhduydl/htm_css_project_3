@@ -361,3 +361,52 @@ a {
     color: var(--primary-color);
     font-weight: 400;
 }
+
+/* About */
+.about {
+    padding: 170px 0;
+}
+
+.about-body {
+    display: flex;
+    align-items: center;
+}
+
+.about__images {
+    position: relative;
+    width: 49%;
+    height: 491px;
+    flex-shrink: 0;
+}
+
+.about__img {
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.about__img:first-child {
+    width: 510px;
+    height: 370px;
+}
+
+.about__img:last-child {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    width: 332px;
+    height: 370px;
+}
+
+.about__content {
+    padding-left: 130px;
+}
+
+.about__desc {
+    margin-top: 18px;
+}
+
+.about__more {
+    margin-top: 38px;
+    padding: 0 52px;
+}

@@ -529,3 +529,119 @@ a {
     gap: 0 28px;
     margin-top: 38px;
 }
+
+/* News */
+.news {
+    padding: 85px 0;
+}
+
+.news-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.news__content {
+    width: 470px;
+}
+
+.news__link {
+    display: inline-block;
+    margin-top: 28px;
+    color: var(--secondary-color);
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.56;
+    text-decoration-line: underline;
+}
+
+.news__controls {
+    display: flex;
+    margin-top: 28px;
+    column-gap: 18px;
+}
+
+.news__control-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 36px;
+    height: 36px;
+    outline: none;
+    background: #fff;
+    border: 1px solid #575f66;
+    border-radius: 50%;
+    color: #575f66;
+    cursor: pointer;
+}
+
+.news__control-btn:hover {
+    background: var(--primary-color);
+    border-color: var(--primary-color);
+    color: #fff;
+}
+
+.news__right-control-btn-img {
+    rotate: 180deg;
+}
+
+.news__list {
+    flex-shrink: 0;
+    width: 49%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 30px;
+}
+
+.news-item {
+    border-radius: 12px;
+    border: 1px solid #e8ebee;
+    background: #fff;
+    overflow: hidden;
+}
+
+.news-item:hover {
+    border-color: #fff;
+    box-shadow: 0px 18px 50px 0px rgba(0, 0, 0, 0.05);
+}
+
+.news-item__thumb {
+    width: 100%;
+    height: 172px;
+    object-fit: cover;
+}
+
+.news-item__content {
+    margin: 18px 22px 22px;
+}
+
+.news-item__title {
+    color: var(--secondary-color);
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.63;
+}
+
+.news-item__desc {
+    margin-top: 10px;
+    color: #575f66;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1.72;
+}
+
+.news-item__more {
+    display: inline-block;
+    margin-top: 12px;
+    color: var(--secondary-color);
+    font-size: 1.4rem;
+    font-style: normal;
+    line-height: normal;
+}
+
+.news-item:hover .news-item__more {
+    color: var(--primary-color);
+}

@@ -141,6 +141,7 @@ a {
     margin-left: 28px;
     padding: 0 20px;
     line-height: 40px;
+    cursor: pointer;
 }
 
 /* Hero */
@@ -479,6 +480,7 @@ a {
     border: 1px solid var(--normal-color);
     color: var(--normal-color);
     border-radius: 50%;
+    cursor: pointer;
 }
 
 .team-control-item:hover {

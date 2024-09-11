@@ -85,6 +85,7 @@ a {
 
 .logo__text {
     margin-left: 6px;
+    font-family: "Sora", sans-serif;
 }
 
 .logo__brand {
@@ -693,4 +694,86 @@ a {
 .appointment__link {
     margin-top: 38px;
     padding: 0 40px;
+}
+
+/* Footer */
+.footer {
+    padding: 100px 0 42px;
+    background: var(--secondary-color);
+    font-family: "Open Sans", sans-serif;
+}
+
+.footer__row {
+    display: grid;
+    grid-template-columns: 1fr 0.4fr 0.4fr 1fr;
+    column-gap: 78px;
+}
+
+.footer__desc {
+    margin-top: 22px;
+    color: #a9b3bb;
+    font-size: 1.6rem;
+    font-style: normal;
+    line-height: 1.75;
+}
+
+.footer__title {
+    color: #fff;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.75;
+}
+
+.footer__list {
+    margin: 10px 0 28px;
+}
+
+.footer__item {
+    display: inline-block;
+    margin-top: 10px;
+    color: #a9b3bb;
+    font-size: 1.4rem;
+    font-style: normal;
+    line-height: 1.86;
+    white-space: nowrap;
+}
+
+.social {
+    display: flex;
+    column-gap: 10px;
+    margin: 20px 0 28px;
+}
+
+.social__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #fff;
+    cursor: pointer;
+}
+
+.social__link:first-of-type {
+    background: var(--primary-color);
+}
+
+.footer__subscribe-desc {
+    margin-top: 20px;
+    width: 273px;
+    color: #a9b3bb;
+    font-size: 1.4rem;
+    font-style: normal;
+    line-height: 1.86;
+}
+
+.footer__copy-right {
+    margin-top: 28px;
+    color: #aab3ba;
+    text-align: center;
+    font-size: 1.4rem;
+    font-style: normal;
+    line-height: 1.86;
 }

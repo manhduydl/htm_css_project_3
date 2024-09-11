@@ -104,7 +104,7 @@ a {
 
 .navbar__list {
     display: flex;
-    gap: 42px;
+    /* gap: 42px; */
 }
 
 .login-cta,
@@ -114,6 +114,7 @@ a {
     font-style: normal;
     font-weight: 300;
     line-height: 1.75;
+    padding: 8px 21px;
 }
 
 .navbar__link--active {

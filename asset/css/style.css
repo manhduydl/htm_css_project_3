@@ -58,6 +58,14 @@ a {
     line-height: 1.67;
 }
 
+input,
+textarea,
+select,
+button {
+    font-family: inherit;
+    font-size: inherit;
+}
+
 /* Header */
 .sticky-header {
     position: sticky;
@@ -254,6 +262,7 @@ a {
     align-items: center;
     padding: 22px;
     transition: 0.25s;
+    cursor: pointer;
 }
 
 .service-item:hover {
@@ -776,4 +785,39 @@ a {
     font-size: 1.4rem;
     font-style: normal;
     line-height: 1.86;
+}
+
+.footer-form {
+    display: flex;
+    gap: 0 12px;
+    margin-top: 10px;
+}
+
+.footer-form__input {
+    padding: 0 10px;
+    width: 212px;
+    height: 46px;
+    background: transparent;
+    outline: none;
+    border-radius: 4px;
+    border: 1px solid #406181;
+    color: #fff;
+}
+
+.footer-form__input::placeholder {
+    color: #9ca8b1;
+    font-size: 1.4rem;
+    font-style: normal;
+    line-height: 1.86;
+}
+
+.footer-form__submit {
+    padding: 0 20px;
+    color: #fff;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 46px;
+    border-radius: 4px;
+    background: var(--primary-color);
 }
